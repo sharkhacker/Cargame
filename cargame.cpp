@@ -136,7 +136,7 @@ void play(){
 	genEnemy(0);
 	genEnemy(1);
 	
-	gotoxy(WIN_WIDTH + 7, 2);cout<<"Car Game";
+	gotoxy(WIN_WIDTH + 7, 2);cout<<"CARGAME";
 	gotoxy(WIN_WIDTH + 6, 4);cout<<"----------";
 	gotoxy(WIN_WIDTH + 6, 6);cout<<"----------";
 	gotoxy(WIN_WIDTH + 7, 12);cout<<"Control ";
@@ -207,7 +207,7 @@ int main()
 	do{
 		system("cls");
 		gotoxy(10,5); cout<<" -------------------------- "; 
-		gotoxy(10,6); cout<<" |        Car Game        | "; 
+		gotoxy(10,6); cout<<" |        CARGAME        | "; 
 		gotoxy(10,7); cout<<" --------------------------";
 		gotoxy(10,9); cout<<"1. Start Game";
 		gotoxy(10,10); cout<<"2. Instructions";	 
@@ -215,7 +215,10 @@ int main()
 		gotoxy(10,13); cout<<"Select option: ";
 		char op = getche();
 		
-		if( op=='1') play();
+		if( op=='1') 
+		{
+				play();
+		}
 		else if( op=='2') instructions();
 		else if( op=='3') exit(0);
 		
